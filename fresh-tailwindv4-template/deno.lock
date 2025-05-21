@@ -2,7 +2,7 @@
   "version": "5",
   "specifiers": {
     "jsr:@fresh/core@^2.0.0-alpha.34": "2.0.0-alpha.34",
-    "jsr:@freshpress/fresh-plugin-tailwind@0.0.1-alpha.8": "0.0.1-alpha.8",
+    "jsr:@freshpress/fresh-plugin-tailwind@^0.0.1-alpha.8": "0.0.1-alpha.8",
     "jsr:@luca/esbuild-deno-loader@0.11": "0.11.1",
     "jsr:@std/bytes@^1.0.2": "1.0.6",
     "jsr:@std/crypto@1": "1.0.5",
@@ -26,7 +26,6 @@
     "npm:esbuild@0.23.1": "0.23.1",
     "npm:postcss@^8.5.3": "8.5.3",
     "npm:preact-render-to-string@^6.5.11": "6.5.13_preact@10.26.6",
-    "npm:preact@^10.26.5": "10.26.6",
     "npm:preact@^10.26.6": "10.26.6",
     "npm:tailwindcss@^4.1.7": "4.1.7"
   },
@@ -50,8 +49,8 @@
         "npm:@preact/signals",
         "npm:esbuild",
         "npm:esbuild-wasm",
-        "npm:preact-render-to-string",
-        "npm:preact@^10.26.6"
+        "npm:preact",
+        "npm:preact-render-to-string"
       ]
     },
     "@freshpress/fresh-plugin-tailwind@0.0.1-alpha.8": {
@@ -300,6 +299,9 @@
     "@opentelemetry/api@1.9.0": {
       "integrity": "sha512-3giAOQvZiH5F9bMlMiv8+GSPMeqg0dbaeo58/0SlA9sxSqZhnUtxzX9/2FzyhS9sWQf5S0GJE0AKBrFqjpeYcg=="
     },
+    "@pkgjs/parseargs@0.11.0": {
+      "integrity": "sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg=="
+    },
     "@preact/signals-core@1.8.0": {
       "integrity": "sha512-OBvUsRZqNmjzCZXWLxkZfhcgT+Fk8DDcT/8vD6a1xhDemodyy87UJRJfASMuSD8FaAIeGgGm85ydXhm7lr4fyA=="
     },
@@ -475,6 +477,11 @@
       "scripts": true,
       "bin": true
     },
+    "fsevents@2.3.3": {
+      "integrity": "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==",
+      "os": ["darwin"],
+      "scripts": true
+    },
     "graceful-fs@4.2.11": {
       "integrity": "sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ=="
     },
@@ -623,9 +630,9 @@
   "workspace": {
     "dependencies": [
       "jsr:@fresh/core@^2.0.0-alpha.34",
-      "jsr:@fresh/plugin-tailwind@^0.0.1-alpha.7",
+      "jsr:@freshpress/fresh-plugin-tailwind@^0.0.1-alpha.8",
       "npm:@preact/signals@^2.0.4",
-      "npm:preact@^10.26.5",
+      "npm:preact@^10.26.6",
       "npm:tailwindcss@^4.1.7"
     ]
   }

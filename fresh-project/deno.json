@@ -12,7 +12,7 @@
   "lint": { "rules": { "tags": ["fresh", "recommended"] } },
   "exclude": ["**/_fresh/*"],
   "imports": {
-    "preact": "npm:preact@^10.26.6",
+    "preact": "npm:preact@^10.26.5",
     "@preact/signals": "npm:@preact/signals@^2.0.4",
     "tailwindcss": "npm:tailwindcss@4.1.7",
     "$std/": "https://deno.land/std@0.216.0/",
