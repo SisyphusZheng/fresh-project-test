@@ -1,5 +1,5 @@
 #!/usr/bin/env -S deno run -A --watch=static/,routes/
-import { tailwind } from "jsr:@freshpress/fresh-plugin-tailwind@0.0.1-alpha.8";
+import { tailwind } from "@fresh/plugin-tailwind";
 
 import { Builder } from "fresh/dev";
 import { app } from "./main.ts";
